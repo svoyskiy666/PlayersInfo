@@ -1,0 +1,22 @@
+{
+  "WebsiteUrl": "https://pan1ka.su/app/modules/module_block_main_servers/includes/js_controller.php",
+  "Password": "",
+  "ServerIp": "",
+  "AutoPushSeconds": 15,
+  "Debug": false,
+  "FaceitApiKey": "",
+  "FaceitCacheMinutes": 180,
+  "PrimeCheck": true,
+  "Rank": {
+    "Enabled": false,
+    "Host": "127.0.0.1",
+    "Port": 3306,
+    "User": "root",
+    "Password": "",
+    "Database": "levels_ranks",
+    "Table": "lvl_base",
+    "SteamColumn": "steam",
+    "RankColumn": "rank",
+    "SteamFormat": "accountid"
+  }
+}
