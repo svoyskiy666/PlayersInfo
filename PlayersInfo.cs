@@ -14,7 +14,7 @@ namespace PlayersInfo;
 public class PlayersInfoPlugin : BasePlugin, IPluginConfig<PlayersInfoConfig>
 {
     public override string ModuleName => "PlayersInfo";
-    public override string ModuleVersion => "1.1.0";
+    public override string ModuleVersion => "1.1.1";
     public override string ModuleAuthor => "pan1ka.su";
     public override string ModuleDescription =>
         "NEO monitoring PlayersInfo (порт Pisex mm_getinfo + mm_postpush)";
@@ -318,7 +318,7 @@ public class PlayersInfoPlugin : BasePlugin, IPluginConfig<PlayersInfoConfig>
 
             if (!done.Wait(3000) || payload == null)
             {
-                Logger.LogWarning("PlayersInfo: не удалось собрать payload для push");
+                DebugLog($"push skipped ({reason}): не удалось собрать payload");
                 return;
             }
 
