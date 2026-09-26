@@ -1,0 +1,2 @@
+# PlayersInfo
+PlayersInfo for CounterStrikeSharp
